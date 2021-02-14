@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 @font-face {
  font-family: Tahoma;
   src: url("fonts/9688.ttf");
@@ -20,7 +21,7 @@ ul {
   min-height: 100vh;
   margin: 0 auto;
   background: white;
-  box-shadow: 0 0 4px 5px #858585a6;
+  box-shadow: 0 0 4px 5px #031d28;
 }
 
 header {
@@ -32,21 +33,96 @@ header {
   padding:66px 0 0 50px;
   height: 148px
 }
+
 .contacts {
   position: absolute;
   top: 47px;
   left: 845px;
   font-size: 12px;
-  font-family: Tahoma;
   color: #5aaec2;
+  font-family: Tahoma
 }
 
 .flag ul {
   display: flex;
-  font-size: 12px;
-  color: #5aaec2;
-  font-family: Tahoma;
   position: absolute;
   top: 150px;
-  left: 650px;
+  left: 676px;
+  font-size: 10px;
 }
+
+.flag a {
+  color: #5aaec2;
+  font-family: Tahoma
+}
+
+nav {
+  background-color: #343434;
+  width: 1000px;
+  height: 20px;
+  box-shadow: 0 0 3px 2px #343434;
+  font-size: 14px;
+}
+
+ul:after {
+  display: flex;
+  content: ' ';
+  clear: both;
+  float: none;
+}
+
+ul.menu > li {
+  float: left;
+  position: relative;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+ul.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul.menu > li > a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  background-color: #343434;
+}
+
+ul.submenu {
+  display: none;
+  position: absolute;
+  width: 106px;
+  top: 20px;
+  left: -5px;
+  background-color: #343434;
+  box-shadow: 0 0 3px 2px #343434;
+}
+
+ul.submenu > li {
+  display: flex;
+}
+
+ul.submenu > li > a {
+  display: flex;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+ul.menu > li:hover > ul.submenu {
+  display: block;
+}
+
+ul.submenu > li > a:hover {
+  text-decoration: none;
+  background-color: #343434;
+}
+ul.menu > li > a:hover {
+  background-color: #343434;
+}
+
