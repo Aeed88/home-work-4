@@ -10,6 +10,7 @@
 
 body {
   background-image: url("img/background.jpg");
+  font-family: Tahoma;
 }
 
 ul {
@@ -18,7 +19,6 @@ ul {
 
 .wrapper {
   max-width: 1000px;
-  min-height: 100vh;
   margin: 0 auto;
   background: white;
   box-shadow: 0 0 4px 5px #031d28;
@@ -40,20 +40,19 @@ header {
   left: 845px;
   font-size: 12px;
   color: #5aaec2;
-  font-family: Tahoma
 }
 
-.flag ul {
+.flags ul {
   display: flex;
   position: absolute;
   top: 150px;
   left: 676px;
   font-size: 10px;
+  color: #5aaec2;
 }
 
-.flag a {
+.flags a {
   color: #5aaec2;
-  font-family: Tahoma
 }
 
 nav {
@@ -64,7 +63,7 @@ nav {
   font-size: 14px;
 }
 
-ul:after {
+nav ul:after {
   display: flex;
   content: ' ';
   clear: both;
@@ -76,7 +75,7 @@ ul.menu > li {
   position: relative;
 }
 
-ul a {
+ul.menu a {
   text-decoration: none;
   color: white;
 }
@@ -96,7 +95,7 @@ ul.menu > li > a {
 ul.submenu {
   display: none;
   position: absolute;
-  width: 106px;
+  width: 110px;
   top: 20px;
   left: -5px;
   background-color: #343434;
@@ -126,3 +125,56 @@ ul.menu > li > a:hover {
   background-color: #343434;
 }
 
+section {
+  display: flex;
+  color: #7d837f;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+section a {
+  text-decoration: none;
+  color: #7d837f;
+  font-size: 14px;
+}
+
+h2 {
+  color: #424c43;
+  font-size: 18px;
+  align-items: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #edeef0;
+  padding: 5px;
+  border-right: 1px solid;
+  width: 210px;
+}
+
+.info li {
+  padding: 5px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #edeef0;
+  padding: 5px;
+  border-left: 1px solid;
+  width: 260px;
+}
+
+.bg-news li {
+  padding: 5px;
+}
+
+.text {
+  text-align: center;
+  color: #b7cddb;
+  font-size: 12px;
+  padding: 10px;
+}
